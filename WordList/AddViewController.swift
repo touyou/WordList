@@ -29,6 +29,7 @@ class AddViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // 追加された単語を保存する、両方うめないとセーブできないようにする
     @IBAction func saveWord() {
         if englishTextField.text! == "" || japaneseTextField.text! == "" {
             let alert = UIAlertController(title: "入力エラー", message: "全ての欄を記入してください", preferredStyle: UIAlertControllerStyle.Alert)

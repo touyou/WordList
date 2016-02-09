@@ -39,7 +39,7 @@ class QuestionViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    // 単語リストをシャッフル
     func shuffle() {
         while wordArray.count > 0 {
             let index = Int(arc4random_uniform(UInt32(wordArray.count)))
@@ -48,6 +48,8 @@ class QuestionViewController: UIViewController {
         }
     }
     
+    // ボタンをおした時の挙動
+    // 単語だけ→答えと単語→次の問題
     @IBAction func nextButtonPushed() {
         if isAnswered {
             nowNumber++

@@ -19,12 +19,8 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
     
-    @IBAction func back(segue: UIStoryboardSegue) {
-        
-    }
-    
+    // Startボタンをおした時
     @IBAction func startButtonPushed() {
         let saveData = NSUserDefaults.standardUserDefaults()
         
